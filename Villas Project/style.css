@@ -1,4 +1,4 @@
-dbody {
+body {
   margin: 0;
 }
 
@@ -10,12 +10,10 @@ dbody {
 
 }
 
-
 .contact-info a {
   text-decoration: none;
   color: black;
   margin-right: 30px;
-
 }
 
 .contact-info i {
@@ -35,13 +33,9 @@ dbody {
   margin-left: 10px;
 }
 
-* {
-  text-decoration: none;
-  color: black;
-}
-
 .belownav {
   padding-left: 50px;
+
 }
 
 .belownav {
@@ -54,11 +48,19 @@ dbody {
   font-weight: bold;
   font-size: 40px;
   font-family: sans-serif;
+
+}
+
+.name a {
+  text-decoration: none;
+  color: black;
 }
 
 ul li a {
   margin-left: 50px;
   font-size: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 li a:hover {
@@ -72,35 +74,9 @@ li {
 }
 
 li a {
-  /* margin-right: 30px; */
+
   margin-left: 50px;
 }
-
-/* .button {
-  border: 1px solid black;
-  height: 40px;
-  width: 180px;
-  background-color: black;
-  border-radius: 50px;
-  margin-right: 280px;
-
-} */
-
-/* .button p{
-  color: red;
-  margin-left: 60px;
-  display: flex;
-  flex-wrap: wrap;
-} */
-/* .circle {
-  border: 1px solid;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: red;
-  margin-left: -2px;
-
-} */
 
 .banner {
   width: 100%;
@@ -111,10 +87,23 @@ li a {
   background-repeat: no-repeat;
 }
 
+.bannerinfo p {
+  color: white;
+
+}
+
+.bannerinfo span {
+  color: orangered
+}
+
+.bannerinfo h1 {
+  color: white;
+}
+
 .box {
   border: 1px solid;
   height: 20px;
-  width: 110px;
+  width: 120px;
 }
 
 .banner p {
@@ -123,54 +112,60 @@ li a {
   top: 290px;
   font-size: 30px;
   border: 1px solid;
-  width: 200px;
+  width: 220px;
   height: 50px;
   margin-left: 180px;
   background-color: white;
   text-align: center;
 }
+
 .box span {
   color: orange;
 }
-h1{
+
+.bannerinfo h1 {
   color: white;
   font-size: 60px;
   margin-left: 180px;
   margin-top: 290px;
   font-family: sans-serif;
 }
-.feature{
+
+.feature {
   width: 1500px;
   height: 490px;
   margin-top: 120px;
   margin-left: 250px;
-  display: flex; 
+  display: flex;
 }
-.matter span{
-  margin-top: -2px;
-  color: orangered;
-  margin-left:15px;
+
+.featured-icon {
+ 
+  width: 70px;
+  height: 60;
+  border-radius: 50%;
+  background-color: red;
+  margin-top: -15px;
 }
-.matter h2{
-  margin-left: 15px;
-  font-size: 30px;
-  font-family: sans-serif;
-}
-.submatter{
-  border: 1px solid lightgray;
-  height: 210px;
-  width: 500px;
-  margin-left: 15px;
-}
-.side{
+.featured-icon img{
   
+  margin-left: 10px;
+  margin-bottom: 10px;
+   
+}
+
+
+.side {
+
   box-shadow: 2px 2px 15px black;
   width: 250px;
   height: 490px;
   border-radius: 10px;
-  margin-left: 30px;  
+  margin-left: 80px;
+
 }
-.meetingbutton{
+
+.meetingbutton {
   display: inline-block;
   background-color: black;
   color: aliceblue;
@@ -179,36 +174,100 @@ h1{
   border-radius: 50px;
 
 }
-.sd-btn{
+
+.sd-btn {
   position: relative;
   left: -4px;
-  width: 100px; ;
+  width: 120px;
   height: 100px;
   display: inline;
-  border-radius: 50px;
+  border-radius: 50%;
   background-color: orangered;
   margin: 0px;
   padding: 10px;
-  
+
 }
-.meetingbutton b{
+
+.sd-btn i {
+  margin-left: -8px;
+
+}
+
+.meetingbutton b {
   color: aliceblue;
 }
-.cards{
+
+.cards {
   display: flex;
   align-content: space-between;
   gap: 200px;
   margin-left: 300px;
   margin-top: 100px;
 }
-.card{
-  
+
+.card {
+
   height: 80px;
   width: 200px;
   border-radius: 20px;
   background-color: rgb(230, 172, 138);
-  
+
 }
+
+.matter {
+  margin-left: 20px;
+}
+
+.matter span {
+  color: orangered;
+}
+
+
+.banner1 {
+  height: 500px;
+  width: 100%;
+  background-image: url("./assests/video-bg.jpg");
+  background-size: 100% 100%;
+  position: relative;
+  top: 50px;
+}
+
+.bgvideo {
+  height: 300px;
+  width: 50%;
+  background-image: url("./assests/video-frame.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 300px;
+  left: 350px;
+  border-radius: 10px;
+}
+
+.playbtn i {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  margin-left: 350px;
+  margin-top: 140px;
+  background-color: orangered;
+  align-content: center;
+}
+
+.text {
+  text-align: center;
+  color: orangered;
+  font-size: 15px;
+}
+
+.subtext {
+  text-align: center;
+  color: white;
+  font-size: 45px;
+
+
+}
+
 /* .round{
   background-color: orangered;
   height: 40px;
@@ -219,13 +278,13 @@ h1{
   
   
 } */
- .image{
+.image {
   background-image: url("./assests/video-frame.jpg");
- }
+}
 
-.bestdeal{
+.bestdeal {
   background-color: lightgrey;
-  width:  100%;
+  width: 100%;
   height: 500px;
   margin-top: 50px;
 }
