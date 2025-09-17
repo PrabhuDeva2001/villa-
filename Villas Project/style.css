@@ -81,7 +81,7 @@ li a {
   height: 800px;
   margin-top: 20px;
   margin-left: 20px;
-  background-image: url("../assests/banner-01.jpg");
+  background-image: url("./assests/banner-01.jpg");
   background-repeat: no-repeat;
 }
 
@@ -202,7 +202,7 @@ li a {
 .banner1 {
   height: 500px;
   width: 100%;
-  background-image: url("../assests/video-bg.jpg");
+  background-image: url("./assests/video-bg.jpg");
   background-size: 100% 100%;
   position: relative;
   top: 50px;
@@ -211,7 +211,7 @@ li a {
 .bgvideo {
   height: 300px;
   width: 50%;
-  background-image: url("../assests/video-frame.jpg");
+  background-image: url("./assests/video-frame.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   position: absolute;
@@ -243,7 +243,7 @@ li a {
 }
 
 .image {
-  background-image: url("../assests/video-frame.jpg");
+  background-image: url("./assests/video-frame.jpg");
 }
 
 .stats-container {
@@ -380,8 +380,7 @@ li a {
 
 .properties-info b {
   color: orangered;
-  text-align: center;
-  margin-left: 750px;
+  margin-left: 700px;
 }
 
 .properties-info h2 {
@@ -389,115 +388,554 @@ li a {
   font-weight: bold;
 }
 
-.property-card{
+.properties {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.properties h2 {
+  margin-bottom: 40px;
+}
+
+.properties {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.properties h2 {
+  margin-bottom: 40px;
+}
+
+.properties-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 50px;
-  align-items: center;
-
-}
-.properties-card{
-  display: flex;
+  gap: 30px;
   justify-content: center;
-  gap: 200px;
-  flex-wrap: wrap;
-}
-
-.card-title {
-  width: 90px;
-  height: 25px;
-  background-color: #f88a4e;
-  border-radius: 5px;
-
 }
 
 .property-card {
-
-  width: 350px;
+  width: 25%;
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
-  transition: 0.3s;
+  padding-bottom: 20px;
 }
 
-.property-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-.property-card img {
+.property-img {
   width: 100%;
-  height: 220px;
+  height: 250px;
   object-fit: cover;
-  border-bottom: 1px solid #eee;
+  border-radius: 15px 15px 0 0;
 }
 
-.property-content {
+.property-info {
   padding: 20px;
 }
 
-.property-tags {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-}
-
-.property-tags span {
-  background: #f5e1dc;
-  color: #c94f3d;
+.tag {
+  background: #ffe5d3;
+  color: #d35400;
   font-size: 14px;
-  font-weight: bold;
-  padding: 5px 12px;
-  border-radius: 8px;
+  padding: 4px 10px;
+  border-radius: 5px;
 }
 
-.property-tags .price {
-  background: none;
-  color: #d9534f;
+.price {
+  float: right;
+  font-weight: bold;
+  color: #e74c3c;
   font-size: 18px;
 }
 
-.property-content h3 {
-  margin: 5px 0;
-  font-size: 20px;
+.address {
+  font-size: 18px;
+  margin: 20px 0 15px 0;
   font-weight: bold;
   color: #333;
 }
 
-.property-content p {
-  font-size: 14px;
+.details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px 12px;
+  margin-bottom: 25px;
+
   color: #555;
-  margin-bottom: 15px;
-}
-
-.property-details {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 15px;
-  margin-bottom: 20px;
   font-size: 14px;
-  color: #444;
 }
 
-.property-details span {
-  font-weight: bold;
+.details strong {
+  font-weight: bolder;
 }
 
 .visit-btn {
   display: block;
-  width: 100%;
-  text-align: center;
+  width: 50%;
+  margin: 0 auto;
   background: #000;
-  color: #fff;
-  text-decoration: none;
+  color: white;
   padding: 12px;
+  border: none;
   border-radius: 25px;
-  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
   transition: 0.3s;
 }
 
 .visit-btn:hover {
-  background: #333;
+  background: #444;
+}
+
+.contact-img {
+  height: 500px;
+  width: 100%;
+  background-image: url("./assests/contact-bg.jpg");
+  background-size: 100% 100%;
+  position: relative;
+  top: 50px;
+}
+
+.map {
+  position: absolute;
+  top: 300px;
+  left: 350px;
+}
+
+.contactform {
+  padding-left: 20px;
+  padding-top: 20px;
+  width: 400px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  position: absolute;
+  top: 300px;
+  left: 990px;
+  box-shadow: 2px 2px 15px black;
+
+}
+
+.contactform input {
+  border-radius: 10px;
+  width: 350px;
+  height: 50px;
+  border: none;
+
+
+}
+
+#contact-btn {
+  background-color: #000;
+  color: white;
+  margin-top: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+}
+
+.contact-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 80px;
+}
+
+/* .card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 25px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  gap: 20px;
+
+  
+} */
+
+.phone-card {
+  box-shadow: 2px 2px 10px black;
+  width: 220px;
+  height: 90px;
+  background-color: white;
+  position: absolute;
+  top: 5030px;
+  left: 200px;
+  background-image: url("./assests/phone-icon.png");
+  background-position: 10px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+
+}
+
+.phone-card h3 {
+  margin-left: 60px;
+  margin-top: 15px;
+
+}
+
+.phone-card p {
+  margin-left: 60px;
+  color: lightgrey;
+}
+
+.email {
+  box-shadow: 2px 2px 10px black;
+  width: 220px;
+  height: 90px;
+  background-color: white;
+  position: absolute;
+  top: 5030px;
+  left: 450px;
+  background-image: url("./assests/email-icon.png");
+  background-position: 10px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+
+}
+
+.email h3 {
+  margin-left: 65px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.email p {
+  margin-left: 65px;
+  color: lightgrey;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top:20px;
+  padding: 30px;
+}
+
+footer strong {
+  color: red;
+}
+
+.propertie-bg {
+  background-image: url("./assests/page-heading-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 380px;
+  margin-top: 20px;
+}
+
+.propertie-bg span {
+  color: black;
+  position: relative;
+  top: 120px;
+  left: 690px;
+  font-weight: bold;
+  font-size: 20px;
+  width: 200px;
+  height: 45px;
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.propertie-bg strong {
+  position: relative;
+  color: white;
+  top: 150px;
+  left: 650px;
+  font-weight: bolder;
+  font-size: 50px;
+
+}
+
+.properties-infos {
+  display: flex;
+  gap: 40px;
+  margin-left: 550px;
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+
+#showall {
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: orangered;
+  text-align: center;
+  color: white;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+
+.tags {
+  border-radius: 5px;
+  width: 100px;
+  height: 30px;
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+  font-weight: 500;
+
+}
+
+.pagination {
+  margin-left: 700px;
+  margin-top: 80px;
+
+}
+
+.pagination ul li {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: #000;
+  color: white;
+  padding: 6px;
+  padding-bottom: 30px;
+  padding-left: 5px;
+}
+
+#active {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: orangered;
+  color: white;
+}
+#propertie-footer{
+   width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 50px;
+  padding: 30px;
+}
+.propertiedetail-bg{
+  background-image: url("./assests/page-heading-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 380px;
+  margin-top: 20px;
+
+}
+
+.propertiedetail-bg span {
+  color: black;
+  position: relative;
+  top: 120px;
+  left: 690px;
+  font-weight: bold;
+  font-size: 20px;
+  width: 200px;
+  height: 45px;
+  background-color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.propertiedetail-bg strong {
+  position: relative;
+  color: white;
+  top: 150px;
+  left: 650px;
+  font-weight: bolder;
+  font-size: 50px;
+
+}
+.side-menu{
+  
+  box-shadow: 2px 2px 15px black;
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  position: absolute;
+  top: 650px;
+  left:900px;
+}
+.appartmet-info span{
+  background-color: rgb(233, 149, 108);
+  position:absolute;
+  top: 1120px;
+  left: 180px;
+  padding: 10px;
+  font: 900;
+}
+.appartmet-info h2{
+  position:absolute;
+  top: 1150px;
+  left: 170px;
+  padding: 10px;
+
+}
+.propertiesinformation{
+  width: 700px;
+  height: 200px;
+  padding: 20px;
+  margin-left: 150px;
+  
+}
+.contact-banner {
+  background-image: url("./assests/contact-bg.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 450px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.contact-banner span{
+  position: absolute;
+  left: 45%;
+  color: orangered;
+  top: 4500px;
+  text-align: center;
+}
+.contact-banner h2{
+  position: absolute;
+  left: 600px;
+  color: white  ;
+  top: 4550px;
+  font-weight: bolder;
+  text-align: center;
+}
+.map-contacts{
+  position: absolute;
+  top: 4700px;
+  left: 200px;
+
+}
+.contact-form{
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  background-color: white;
+  position: relative;
+  left: 800px;
+  bottom: 200px;
+  width: 550px;
+  height: 500px;
+}
+.contact-form input{
+  width: 500px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.contact-form label{
+   margin-left: 15px;
+
+}
+.contact-form textarea{
+  margin: 10px;
+}
+
+#contact-bttn{
+  position: absolute;
+  left: 13px;
+  bottom: 5px;
+  border-radius: 8px;
+  background-color: #000;
+  color: white;
+}
+.text-contact{
+  margin-left: 20px;
+}
+.subtext-contact{
+  margin-left: 20px;
+}
+.contactinfoo{
+  border: 1px solid;
+  width: 500px;
+  height: 500px;
+  background-color: #000;
+}
+.contact-imgg p{
+  width: 500px;
+  height: 200px;
+  margin-left: 20px;
+}
+.contact-imgg{
+  margin-top:50px;
+  margin-left: 20px;
+}
+.contact-formm{
+  position: absolute;
+  left: 800px;
+  top: 600px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.5);
+  background-color: white;
+
+}
+
+.contact-formm input{
+  width: 500px;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 8px;
+}
+.contact-formm label{
+   margin-left: 15px;
+
+}
+.contact-formm textarea{
+  margin: 10px;
+}
+.map-contact{
+  margin-top: 200px;
+}
+.phone-cards{
+  box-shadow: 2px 2px 10px black;
+  width: 250px;
+  height: 70px;
+  margin-left: 30px;
+  background-image: url("./assests/phone-icon.png");
+  background-position: 10px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+.emails{
+  box-shadow: 2px 2px 10px black;
+  width: 250px;
+  height: 70px;
+  margin-left: 30px;
+  margin-top: 5px;
+  background-image: url("./assests/email-icon.png");
+  background-position: 10px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+}
+
+.phone-cards h3 {
+  margin-left: 60px;
+  margin-top: 15px;
+
+}
+
+.phone-cards p {
+  margin-left: 60px;
+  color: lightgrey;
+}
+.emails h3 {
+  margin-left: 65px;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+.emails p {
+  margin-left: 65px;
+  color: lightgrey;
+}
+.map-contact{
+ position: absolute;
+ top: 1000px;
+ left: 30px;
+}
+.footer-details{
+  position: relative;
+  top: 550px;
 }
